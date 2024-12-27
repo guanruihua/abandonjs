@@ -98,14 +98,14 @@ describe('pageQuery', () => {
     const pq = pageQuery(getList())
     const page1 = pq.getPage()
     expect(page1.pagination).toEqual({
-      pageNo: 1,
+      current: 1,
       pageSize: 10,
       total: 11,
     })
     pq.add({ id: 't-1', a: 100 })
     const page2 = pq.getPage()
     expect(page2.pagination).toEqual({
-      pageNo: 1,
+      current: 1,
       pageSize: 10,
       total: 12,
     })
@@ -116,7 +116,7 @@ describe('pageQuery', () => {
 
     const page3 = pq.getPage()
     expect(page3.pagination).toEqual({
-      pageNo: 1,
+      current: 1,
       pageSize: 10,
       total: 14,
     })
@@ -126,7 +126,7 @@ describe('pageQuery', () => {
 
     const page4 = pq.getPage()
     expect(page4.pagination).toEqual({
-      pageNo: 1,
+      current: 1,
       pageSize: 10,
       total: 11,
     })
@@ -134,7 +134,7 @@ describe('pageQuery', () => {
 
     const page5 = pq.getPage()
     expect(page5.pagination).toEqual({
-      pageNo: 1,
+      current: 1,
       pageSize: 10,
       total: 12,
     })

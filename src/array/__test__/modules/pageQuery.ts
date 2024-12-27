@@ -144,7 +144,7 @@ const list = [
     {
       param: page.pagination,
       tobe: {
-        pageNo: 1,
+        current: 1,
         pageSize: 10,
         total: 11
       }
@@ -176,7 +176,7 @@ const list = [
     {
       param: page.pagination,
       tobe: {
-        pageNo: 1,
+        current: 1,
         pageSize: 10,
         total: 11
       }
@@ -198,7 +198,7 @@ const list = [
 // 						numberFuzzyQuery: true,
 // 					}
 // 				},
-// 				paging: { pageNo: 1, pageSize: 3 }
+// 				paging: { current: 1, pageSize: 3 }
 // 			},
 // 			tobe: {
 // 				list: [
@@ -218,7 +218,7 @@ const list = [
 // 					{ a: 2, b: 12, c: 'code_1223', d: 'cccc' },
 // 					{ a: 3, b: 13, c: 'code_1224', d: 'cccc' },
 // 				],
-// 				paging: { pageNo: 1, pageSize: 3, total: 10 }
+// 				paging: { current: 1, pageSize: 3, total: 10 }
 // 			},
 // 		},
 // 		{
@@ -229,7 +229,7 @@ const list = [
 // 					b: 1,
 // 				},
 // 				numberFuzzyQuery: true,
-// 				paging: { pageNo: 1, pageSize: 3 }
+// 				paging: { current: 1, pageSize: 3 }
 // 			},
 // 			tobe: {
 // 				list: [
@@ -249,7 +249,7 @@ const list = [
 // 					{ a: 2, b: 12, c: 'code_1223', d: 'cccc' },
 // 					{ a: 3, b: 13, c: 'code_1224', d: 'cccc' },
 // 				],
-// 				paging: { pageNo: 1, pageSize: 3, total: 10 }
+// 				paging: { current: 1, pageSize: 3, total: 10 }
 // 			},
 // 		},
 // 		{
@@ -259,12 +259,12 @@ const list = [
 // 				params: {
 // 					b: 1,
 // 				},
-// 				paging: { pageNo: 1, pageSize: 3 }
+// 				paging: { current: 1, pageSize: 3 }
 // 			},
 // 			tobe: {
 // 				list: [],
 // 				pageList: [],
-// 				paging: { pageNo: 1, pageSize: 3, total: 0 }
+// 				paging: { current: 1, pageSize: 3, total: 0 }
 // 			},
 // 		},
 // 		{
@@ -274,7 +274,7 @@ const list = [
 // 				params: {
 // 					c: '1222'
 // 				},
-// 				paging: { pageNo: 1, pageSize: 3 }
+// 				paging: { current: 1, pageSize: 3 }
 // 			},
 // 			tobe: {
 // 				list: [
@@ -283,41 +283,41 @@ const list = [
 // 				pageList: [
 // 					{ a: 1, b: 11, c: 'code_1222', d: 'cccc' }
 // 				],
-// 				paging: { pageNo: 1, pageSize: 3, total: 1 }
+// 				paging: { current: 1, pageSize: 3, total: 1 }
 // 			},
 // 		},
 // 		{
 // 			name: 'paging1-3',
 // 			param: {
 // 				list,
-// 				paging: { pageNo: 2, pageSize: 3 }
+// 				paging: { current: 2, pageSize: 3 }
 // 			},
 // 			tobe: {
 // 				list: list,
 // 				pageList: list.slice(3, 6),
-// 				paging: { pageNo: 2, pageSize: 3, total: list.length }
+// 				paging: { current: 2, pageSize: 3, total: list.length }
 // 			},
 // 		},
 // 		{
 // 			param: {
 // 				list,
-// 				paging: { pageNo: 0, pageSize: 3 }
+// 				paging: { current: 0, pageSize: 3 }
 // 			},
 // 			tobe: {
 // 				list,
 // 				pageList: [],
-// 				paging: { pageNo: 0, pageSize: 3, total: list.length }
+// 				paging: { current: 0, pageSize: 3, total: list.length }
 // 			},
 // 		},
 // 		{
 // 			param: {
 // 				list,
-// 				paging: { pageNo: 1, pageSize: 0 }
+// 				paging: { current: 1, pageSize: 0 }
 // 			},
 // 			tobe: {
 // 				list,
 // 				pageList: [],
-// 				paging: { pageNo: 1, pageSize: 0, total: list.length }
+// 				paging: { current: 1, pageSize: 0, total: list.length }
 // 			},
 // 		},
 

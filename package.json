@@ -1,12 +1,12 @@
 {
   "name": "abandonjs",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "description": "js / ts 方法包",
   "module": "lib/index.esm.js",
   "main": "lib/index.js",
   "unpkg": "/lib/",
   "deliver": "/lib/",
-  "typings": "lib/index.d.ts",
+  "typings": "lib/abandonjs/src/index.d.ts",
   "scripts": {
     "jtClean": "jest --clearCache",
     "jt": "jest",
@@ -48,7 +48,7 @@
   "devDependencies": {
     "0file-system": "^0.2.1",
     "0math": "0.1.2",
-    "0type": "^0.1.0",
+    "0type": "^0.2.0",
     "@babel/core": "^7.24.4",
     "@babel/plugin-transform-runtime": "^7.24.3",
     "@babel/preset-env": "^7.24.4",

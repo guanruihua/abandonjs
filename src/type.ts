@@ -1,3 +1,5 @@
+export * from '0type'
+
 export type Itteratee = string | ((val: any) => any)
 
 export type Predicate = any[] | ((val: any) => any) | ObjectType<any> | string | undefined

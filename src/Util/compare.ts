@@ -1,6 +1,6 @@
 import { isArray, isEmpty, isNumber, isRegExp, type } from 'asura-eye'
 import { Val, Valer } from '../type'
-import { toPathValue } from "./toPathValue"
+import { toPathValue } from "./pathValue"
 import { equal } from './equal'
 
 /**
@@ -68,7 +68,7 @@ export function compareNumber(val: number, valer: Valer): boolean {
  * @param {string} [path] 值的路径 用逗号隔开
  * @returns {boolean}
  */
-export function compareValue(val: Val, valer: Valer, path?: string): boolean {
+export function compareValue(val: Val | any, valer: Valer, path?: string): boolean {
 
 	if (path) {
 		val = toPathValue(val, path)

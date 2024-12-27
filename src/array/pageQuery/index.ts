@@ -113,14 +113,14 @@ export function pageQuery(originDataSource: ObjectType[] = [], props: PageQueryP
     params?: ObjectType,
     pagination: Partial<Pagination> = {}
   ) => {
-    const { pageNo = 1, pageSize = 10, sortBy } = pagination
+    const { current = 1, pageSize = 10, sortBy } = pagination
 
     const newDataSource = getDataSource(params, { sortBy })
 
     return {
-      dataSource: newDataSource.slice((pageNo - 1) * pageSize, pageNo * pageSize),
+      dataSource: newDataSource.slice((current - 1) * pageSize, current * pageSize),
       pagination: {
-        pageNo,
+        current,
         pageSize,
         total: newDataSource.length
       }

@@ -4,7 +4,7 @@ type SortBy = ObjectType<'desc' | 'asc' | unknown>
 
 export type Pagination = {
 	pageSize: number
-	pageNo: number
+	current: number
 	sortBy?: SortBy
 	total?: number
 }

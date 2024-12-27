@@ -1,4 +1,4 @@
-export function cronToText(cronExpression) {
+export function cronToText(cronExpression:string) {
   const cronParts = cronExpression.split(' ')
   const minute = cronParts[0]
   const hour = cronParts[1]
@@ -38,7 +38,7 @@ export function cronToText(cronExpression) {
   return text
 }
 
-export function cronToChinese(cronExpression) {
+export function cronToChinese(cronExpression: string) {
   const cronParts = cronExpression.split(' ')
   const minute = cronParts[0]
   const hour = cronParts[1]
